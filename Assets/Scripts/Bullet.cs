@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private GameObject bulletImpactFX;
 
 
-    private Vector3 startPosition;
+    private Vector3 startPosition; //LImChila
     private float flyDistance;
     private bool bulletDisabled;
 
@@ -51,7 +51,7 @@ public class Bullet : MonoBehaviour
         DisableBulletIfNeeded();
         ReturnToPoolIfNeeded();
     }
-
+    
     protected void ReturnToPoolIfNeeded()
     {
         if (trailRenderer.time < 0)
